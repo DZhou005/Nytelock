@@ -2,12 +2,14 @@
   background-image: linear-gradient(.25turn,#515151, 10%,#282828);
   height: 28rem;
   width: 70rem;
+  border-radius: 0.7rem;
 }
 .container{
   display: flex;
-  justify-content: center;
-  align-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-top: 5rem;
+  height: 100vh;
 }
 
 .firstBulletPoint{
@@ -96,4 +98,16 @@
 .arrowButton{
   height: 4.5rem;
   width: 4.5rem;
+}
+
+
+.infoDisplay{
+  position: relative;
+  right: 13rem;
+  top: 5rem;
+}
+
+.infoDisplayTitle{
+  font-weight: bold;
+  font-family: 'Open Sans';
 }
