@@ -169,6 +169,8 @@
 .infoButtons:hover .buttonInnerText{
   background:white;
   color:black;
+  text-decoration: underline;
+  text-decoration-color:#d3a717;
 }
 .infoButtons:hover{
   background:white;
