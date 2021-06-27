@@ -138,3 +138,43 @@
 .infoPicContainer{
   margin-left: 8rem;
 }
+
+.infoButtonsContainer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+.infoButtons{
+  cursor: pointer;
+  border-radius: 0.6rem;
+  height: 10rem;
+  width: 10rem;
+  font-weight: bold;
+  font-size: large;
+  background-color: inherit;
+  color: white;
+  border: 1px solid lightgray;
+
+}
+
+.infoButtons:hover{
+  background-color: white;
+  color:black;
+  text-decoration: underline;
+  text-decoration-color:#ffcc29;
+}
+
+.infoButtons:active{
+  background-color: lightgreen;
+}
+
+.infoButtons:focus{
+  background-color: lightgreen;
+}
+
+.infoButtons:target{
+  background-color: lightgreen;
+}

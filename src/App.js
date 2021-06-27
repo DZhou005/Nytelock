@@ -48,9 +48,54 @@ function App() {
             <p className='infoDisplayDescription'>A pictorial mark (sometimes called brand mark or logo symbol) is an icon--or graphic-based logo. It's probably the image that comes to mind when you think "logo":the iconic Apple logo, the Twitter bird, the Target bullseye. Each of these companies' logos is so emblematic, and each brand so established, that the mark alone is instantly recognizable.</p>
           </div>
           <div className='infoPicContainer'>
-            <img className='infoPics' src={process.env.PUBLIC_URL + '/visa.png'} alt='none'></img>
-            <img className='infoPics' src={process.env.PUBLIC_URL + '/coke.png'} alt='none'></img>
-            <img className='infoPics' src={process.env.PUBLIC_URL + '/google.png'} alt='none'></img>
+            <img className='infoPics' src={process.env.PUBLIC_URL + '/apple.png'} alt='none'></img>
+            <img className='infoPics' src={process.env.PUBLIC_URL + '/twitter.png'} alt='none'></img>
+            <img className='infoPics' src={process.env.PUBLIC_URL + '/target.png'} alt='none'></img>
+          </div>
+        </div>
+      )
+    }
+    else if(info === 'abstract') {
+      return (
+        <div className='infoContainer'>
+          <div className='infoDisplay'>
+            <h1 className='infoDisplayTitle'>Abstract Mark Logos</h1>
+            <p className='infoDisplayDescription'>An abstract mark is a specific type of pictorial logo. Instead of being a recognizable image--like an apple or a bird--it's an abstract geometric form that represents your business. A few famous examples include the BP starburst-y logo, the Pepsi divided circle and the strip-y Adidas flower.<br/><br/>Like all logo symbols, abstract marks work really well because they condense your brand into a single image. However, instead of being restricted to a picture of something unrecognizable, abstract logos allow you to create something truly unique to represent your brand.</p>
+          </div>
+          <div className='infoPicContainer'>
+            <img className='infoPics' src={process.env.PUBLIC_URL + '/bp.png'} alt='none'></img>
+            <img className='infoPics' src={process.env.PUBLIC_URL + '/pepsi.png'} alt='none'></img>
+            <img className='infoPics' src={process.env.PUBLIC_URL + '/adidas.png'} alt='none'></img>
+          </div>
+        </div>
+      )
+    }
+    else if(info === 'mascot') {
+      return (
+        <div className='infoContainer'>
+          <div className='infoDisplay'>
+            <h1 className='infoDisplayTitle'>Mascot Logos</h1>
+            <p className='infoDisplayDescription'>Mascot logos are logos that invovle an illustrated character. Often colorful, sometimes cartoonish, and most always fun, the mascot logo is a great way to create your very own brand spokesperson<br/><br/> A mascot is simply an illustrated character that represents your company. Think of them as the ambassador for your business. Famous mascots include the Kool-Aid Man, KFC's Colonel and PUB's cute Water Wally.</p>
+          </div>
+          <div className='infoPicContainer'>
+            <img className='infoPics' src={process.env.PUBLIC_URL + '/koolaid.png'} alt='none'></img>
+            <img className='infoPics' src={process.env.PUBLIC_URL + '/kfc.png'} alt='none'></img>
+            <img className='infoPics' src={process.env.PUBLIC_URL + '/peanut.png'} alt='none'></img>
+          </div>
+        </div>
+      )
+    }
+    else if(info === 'combination') {
+      return (
+        <div className='infoContainer'>
+          <div className='infoDisplay'>
+            <h1 className='infoDisplayTitle'>Combination Logos</h1>
+            <p className='infoDisplayDescription'>A combination mark is a logo comprised of a combined wordmark or lettermark and a pictorial mark, abstract mark, or mascot. The picture and text can be laid out side-by-side, stacked on top of each other, or intergrated together to create an image. <br/><br/> Because a name is associated with the image, a combination mark is a versatile choice, with both the text and icon or mascot working together to reinforce your brand.</p>
+          </div>
+          <div className='infoPicContainer'>
+            <img className='infoPics' src={process.env.PUBLIC_URL + '/doritos.png'} alt='none'></img>
+            <img className='infoPics' src={process.env.PUBLIC_URL + '/burgerking.png'} alt='none'></img>
+            <img className='infoPics' src={process.env.PUBLIC_URL + '/lacoste.png'} alt='none'></img>
           </div>
         </div>
       )
@@ -69,13 +114,13 @@ function App() {
        <div className='contactUsButtonDiv'>
         <button onClick={() => window.location.assign('https://nytelock.com/quote/')}className='contactUsButton'>Contact Us {<img className='arrowButton' src={process.env.PUBLIC_URL + '/arrow.png'} alt='none'></img>}</button>
        </div>
-      <div className='infoButtons'>
-        <button onClick={() => setInfo('lettermark')}>Lettermark <br/> Logos</button>
-        <button onClick={() => setInfo('wordmark')}>Wordmark <br /> Logos</button>
-        <button onClick={() => setInfo('pictorial')}>Pictorial Mark <br /> Logos</button>
-        <button onClick={() => setInfo('abstract')}>Abstract Mark <br /> Logos</button>
-        <button onClick={() => setInfo('mascot')}>Mascot <br /> Logos</button>
-        <button onClick={() => setInfo('combination')}>Combination<br /> Logos</button>
+      <div className='infoButtonsContainer'>
+        <button className='fas fa-italic infoButtons' onClick={() => setInfo('lettermark')}>Lettermark <br/><br/>Logos</button>
+        <button className='infoButtons' onClick={() => setInfo('wordmark')}>Wordmark <br /> <br/>Logos</button>
+        <button className='infoButtons' onClick={() => setInfo('pictorial')}>Pictorial Mark <br/><br /> Logos</button>
+        <button className='infoButtons' onClick={() => setInfo('abstract')}>Abstract Mark <br/><br /> Logos</button>
+        <button className='infoButtons' onClick={() => setInfo('mascot')}>Mascot <br /><br/> Logos</button>
+        <button className='infoButtons' onClick={() => setInfo('combination')}>Combination<br /> <br/>Logos</button>
       </div>
      </div>
      {infoDisplay()}
