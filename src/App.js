@@ -45,7 +45,7 @@ function App() {
         <div className='infoContainer'>
           <div className='infoDisplay'>
             <h1 className='infoDisplayTitle'>Pictorial Mark Logos</h1>
-            <p className='infoDisplayDescription'>A pictorial mark (sometimes called brand mark or logo symbol) is an icon--or graphic-based logo. It's probably the image that comes to mind when you think "logo":the iconic Apple logo, the Twitter bird, the Target bullseye. Each of these companies' logos is so emblematic, and each brand so established, that the mark alone is instantly recognizable.</p>
+            <p className='infoDisplayDescription'>A pictorial mark (sometimes called brand mark or logo symbol) is an icon--or graphic-based logo. It's probably the image that comes to mind when you think "logo":the iconic Apple logo, the Twitter bird, the Target bullseye. Each of these companies' logos is so emblematic, and each brand so established, that the mark alone is instantly recognizable. <br/><br/> A true brand mark is only an image. Because of this, it can be a tricky logo type for new companies, or those without strong brand recognition, to use.</p>
           </div>
           <div className='infoPicContainer'>
             <img className='infoPics' src={process.env.PUBLIC_URL + '/apple.png'} alt='none'></img>
@@ -60,7 +60,7 @@ function App() {
         <div className='infoContainer'>
           <div className='infoDisplay'>
             <h1 className='infoDisplayTitle'>Abstract Mark Logos</h1>
-            <p className='infoDisplayDescription'>An abstract mark is a specific type of pictorial logo. Instead of being a recognizable image--like an apple or a bird--it's an abstract geometric form that represents your business. A few famous examples include the BP starburst-y logo, the Pepsi divided circle and the strip-y Adidas flower.<br/><br/>Like all logo symbols, abstract marks work really well because they condense your brand into a single image. However, instead of being restricted to a picture of something unrecognizable, abstract logos allow you to create something truly unique to represent your brand.</p>
+            <p className='infoDisplayDescription'>An abstract mark is a specific type of pictorial logo. Instead of being a recognizable image—like an apple or a bird—it's an abstract geometric form that represents your business. A few famous examples include the BP starburst-y logo, the Pepsi divided circle and the strip-y Adidas flower.<br/><br/>Like all logo symbols, abstract marks work really well because they condense your brand into a single image. However, instead of being restricted to a picture of something unrecognizable, abstract logos allow you to create something truly unique to represent your brand.</p>
           </div>
           <div className='infoPicContainer'>
             <img className='infoPics' src={process.env.PUBLIC_URL + '/bp.png'} alt='none'></img>
@@ -115,9 +115,7 @@ function App() {
         <button onClick={() => window.location.assign('https://nytelock.com/quote/')}className='contactUsButton'>Contact Us {<img className='arrowButton' src={process.env.PUBLIC_URL + '/arrow.png'} alt='none'></img>}</button>
        </div>
       <div className='infoButtonsContainer'>
-        <div className='eachButtonContainer'>
-          <button className='fas fa-italic infoButtons' onClick={() => setInfo('lettermark')}><div className='buttonInnerText'>Lettermark <br/><br/>Logos</div></button>
-        </div>
+        <button className='fas fa-italic infoButtons' onClick={() => setInfo('lettermark')}><div className='buttonInnerText'>Lettermark <br/><br/>Logos</div></button>
         <button className='fab fa-weebly infoButtons' onClick={() => setInfo('wordmark')}><div className='buttonInnerText'>Wordmark <br/><br/>Logos</div></button>
         <button className='fas fa-lemon infoButtons' onClick={() => setInfo('pictorial')}><div className='buttonInnerText'>Pictorial Mark<br/><br/>Logos</div></button>
         <button className='fab fa-artstation infoButtons' onClick={() => setInfo('abstract')}><div className='buttonInnerText'>Abstract Mark <br/><br/>Logos</div></button>

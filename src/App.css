@@ -1,5 +1,5 @@
 .infoBox{
-  background-image: linear-gradient(.25turn,#515151, 10%,#282828);
+  background-image: linear-gradient(.25turn,#5c5c5c, 10%,#313131);
   height: 35rem;
   width: 88rem;
   border-radius: 0.7rem;
@@ -21,9 +21,8 @@
 
 .text1{
   color:white;
-  font-family: 'Open Sans';
+  font-family: 'Montserrat';
   font-size: xx-large;
-  font-weight: bold;
 }
 
 .twoLinesOfText{
@@ -39,8 +38,8 @@
   font-weight: bolder;
   border-top: 1px solid black;
   border-radius: 10rem;
-  width:13rem;
-  height:3.5rem;
+  width:11.1rem;
+  height:3.2rem;
   border: none;
   cursor: pointer;
   display: flex;
@@ -99,8 +98,9 @@
 
 
 .arrowButton{
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-right:-0.5rem;
 }
 
 
@@ -137,6 +137,8 @@
 }
 
 .infoPicContainer{
+  display: flex;
+  align-items: flex-end;
   margin-left: 8rem;
 }
 
@@ -170,7 +172,7 @@
 }
 .infoButtons:hover{
   background:white;
-  color:black;
+  color:rgb(0, 0, 0);
 }
 
 .buttonInnerText{
@@ -191,25 +193,11 @@
   color:black;
 
 }
-.infoButtons:focus:before{
-  color: black;
-  content: '';
-  position: absolute;
-  bottom: 0;
-  /* left: 50%; */
-  width: 0;
-  height: 0;
-  border: 23px solid transparent;
-  border-top-color: white;
-  border-bottom: 0;
-  margin-left: -23px;
-  margin-bottom: -23px;
-
-}
 
 .infoButtons:focus{
   background-color: white;
   color:black;
+  border-bottom: none;
 }
 
 .infoButtons:active{
