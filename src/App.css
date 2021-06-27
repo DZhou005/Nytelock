@@ -16,13 +16,14 @@
   color: #ffcc29;
   font-weight: bold;
   font-family: 'Open Sans';
+  font-size:smaller;
 }
 
 .text1{
   color:white;
-  font-family: 'Montserrat';
+  font-family: 'Open Sans';
   font-size: xx-large;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .twoLinesOfText{
@@ -141,7 +142,7 @@
 
 .infoButtonsContainer{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   cursor: pointer;
 
@@ -149,32 +150,85 @@
 
 .infoButtons{
   cursor: pointer;
+  position: relative;
   border-radius: 0.6rem;
   height: 10rem;
   width: 10rem;
   font-weight: bold;
-  font-size: large;
+  font-size:xx-large;
   background-color: inherit;
-  color: white;
-  border: 1px solid lightgray;
+  color: #ffcc29 ;
+  border: 1px solid gray;
+  margin-left: 1rem;
+  margin-right: 1rem;
 
 }
 
+.infoButtons:hover .buttonInnerText{
+  background:white;
+  color:black;
+}
 .infoButtons:hover{
-  background-color: white;
+  background:white;
+  color:black;
+}
+
+.buttonInnerText{
+  margin-top: 1rem;
+  color:white;
+  font-size: medium;
+  font-weight: bold;
+  font-family: 'Open sans';
+}
+.buttonInnerText:hover{
   color:black;
   text-decoration: underline;
-  text-decoration-color:#ffcc29;
+  text-decoration-color:#d3a717;
 }
 
-.infoButtons:active{
-  background-color: lightgreen;
+.infoButtons:focus .buttonInnerText{
+  background-color: white;
+  color:black;
+
+}
+.infoButtons:focus:before{
+  color: black;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  /* left: 50%; */
+  width: 0;
+  height: 0;
+  border: 23px solid transparent;
+  border-top-color: white;
+  border-bottom: 0;
+  margin-left: -23px;
+  margin-bottom: -23px;
+
 }
 
 .infoButtons:focus{
-  background-color: lightgreen;
+  background-color: white;
+  color:black;
 }
 
-.infoButtons:target{
-  background-color: lightgreen;
+.infoButtons:active{
+  background-color: white;
+  color:black;
+}
+.infoButtons:visited{
+  background-color: white;
+  color:black;
+}
+.buttonInnerText:focus{
+  background-color: white;
+  color:black;
+}
+.buttonInnerText:active{
+  background-color: white;
+  color:black;
+}
+.buttonInnerText:visited{
+  background-color: white;
+  color:black;
 }

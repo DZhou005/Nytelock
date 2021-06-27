@@ -115,12 +115,14 @@ function App() {
         <button onClick={() => window.location.assign('https://nytelock.com/quote/')}className='contactUsButton'>Contact Us {<img className='arrowButton' src={process.env.PUBLIC_URL + '/arrow.png'} alt='none'></img>}</button>
        </div>
       <div className='infoButtonsContainer'>
-        <button className='fas fa-italic infoButtons' onClick={() => setInfo('lettermark')}>Lettermark <br/><br/>Logos</button>
-        <button className='infoButtons' onClick={() => setInfo('wordmark')}>Wordmark <br /> <br/>Logos</button>
-        <button className='infoButtons' onClick={() => setInfo('pictorial')}>Pictorial Mark <br/><br /> Logos</button>
-        <button className='infoButtons' onClick={() => setInfo('abstract')}>Abstract Mark <br/><br /> Logos</button>
-        <button className='infoButtons' onClick={() => setInfo('mascot')}>Mascot <br /><br/> Logos</button>
-        <button className='infoButtons' onClick={() => setInfo('combination')}>Combination<br /> <br/>Logos</button>
+        <div className='eachButtonContainer'>
+          <button className='fas fa-italic infoButtons' onClick={() => setInfo('lettermark')}><div className='buttonInnerText'>Lettermark <br/><br/>Logos</div></button>
+        </div>
+        <button className='fab fa-weebly infoButtons' onClick={() => setInfo('wordmark')}><div className='buttonInnerText'>Wordmark <br/><br/>Logos</div></button>
+        <button className='fas fa-lemon infoButtons' onClick={() => setInfo('pictorial')}><div className='buttonInnerText'>Pictorial Mark<br/><br/>Logos</div></button>
+        <button className='fab fa-artstation infoButtons' onClick={() => setInfo('abstract')}><div className='buttonInnerText'>Abstract Mark <br/><br/>Logos</div></button>
+        <button className='fas fa-theater-masks infoButtons' onClick={() => setInfo('mascot')}><div className='buttonInnerText'>Mascot <br/><br/>Logos</div></button>
+        <button className='fas fa-puzzle-piece infoButtons' onClick={() => setInfo('combination')}><div className='buttonInnerText'>Combination <br/><br/>Logos</div></button>
       </div>
      </div>
      {infoDisplay()}
